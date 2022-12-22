@@ -192,6 +192,7 @@ if __name__ == '__main__':
     y = int(data[int(data[0]) + 1].split(" ")[1])
     answer = get_step(matrix, (x, y))
     matrix[answer[0]][answer[1]] = -1
+    sys.stdout.write(str(answer[0]) + ' ' + str(answer[1]))
     #последующие ходы
     while True:
         values = sys.stdin.readline().split("\n")
